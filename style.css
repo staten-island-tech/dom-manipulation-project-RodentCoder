@@ -4,10 +4,25 @@
     margin: 0px;
 }
 
-.title {
+body{
+    background-color: rgb(147, 214, 149);
+}
+
+.title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 75px;
+}
+
+.text {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 50% auto;
+    height: 50px;
+    font-size: large;
     text-align: center;
 }
 
-.bigman{
-    text-align: center;
-}
+
+
