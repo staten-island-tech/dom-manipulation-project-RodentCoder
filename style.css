@@ -14,14 +14,26 @@ body{
     font-size: 75px;
 }
 
+.area{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   */
+} 
+    
+
+.button{
+  
+}
+
 .text {
-    display: block;
+    /* display: block;
     margin: 0 auto;
     margin-top: 50px;
     width: 50% auto;
     height: 50px;
     font-size: large;
-    text-align: center;
+    text-align: center; */
 }
 
 
