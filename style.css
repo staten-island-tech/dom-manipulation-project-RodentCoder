@@ -19,13 +19,23 @@ body{
     font-size: 40px;
 }
 
-.text {
+.area{
     display: flex;
+    flex-direction: column;
+}
+
+.click{
     margin: 0 auto;
     margin-top: 10px;
     width: 50% auto;
     font-size: large;
-    text-align: left;
+}
+
+.text {
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: large;
+    text-align: center;
 }
 
 
