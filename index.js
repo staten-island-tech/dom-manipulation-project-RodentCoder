@@ -5,3 +5,12 @@ const DOMselectors = {
   Text: document.querySelector("#text"),
   Image: document.querySelector("#image"),
 };
+
+function test(backgound, text) {
+  backgound.style.backgoundcolor = "red";
+  text.textContent = "test";
+}
+
+DOMselectors.Button.addEventListener("click", function () {
+  test(DOMselectors.Area, DOMselectors.text);
+});
