@@ -32,12 +32,21 @@ body{
     font-size: large;
 }
 
+#reset{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 50% auto;
+    font-size: large;
+
+}
+
 .text {
     margin: 0 auto;
     margin-top: 10px;
     font-size: large;
     text-align: center;
 }
+
 
 
 

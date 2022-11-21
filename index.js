@@ -1,15 +1,13 @@
 const DOMselectors = {
-  Area: document.getElementsByClassName(".area"),
-  Button: document.querySelector("#btn"),
-  Name: document.querySelector("#name"),
-  Descript: document.querySelector("#descript"),
-  Image: document.querySelector("#image"),
+  Area: document.getElementsByClassName("area"),
+  Button: document.getElementById("btn"),
+  Name: document.getElementById("name"),
+  Descript: document.getElementById("descript"),
+  Image: document.getElementById("image"),
+  Result: document.getElementsByClassName("result"),
+  Reset: document.getElementById("reset"),
 };
 
-function texts(text) {
-  text.textcontent = "help";
+function input(e) {
+  e.preventDefault();
 }
-
-DOMselectors.Button.addEventListener("click", function () {
-  texts(DOMselectors.Name);
-});
