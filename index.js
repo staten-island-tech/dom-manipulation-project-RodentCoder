@@ -5,30 +5,22 @@ const DOMselectors = {
   Descript: document.getElementById("descript"),
   Image: document.getElementById("image"),
   Card: document.getElementById("display"),
-  Remove: document.getElementById("remove")
+  Remove: document.getElementById("remove"),
 };
 
-DOMselectors.Button.addEventListener("click" , function(e){
+DOMselectors.Button.addEventListener("click", function (e) {
   e.preventDefault();
 
   let Name = DOMselectors.Name.value;
   let Descript = DOMselectors.Descript.value;
+  let Image = DOMselectors.Image.value;
 
-  function createcard(){
-
-    DOMselectors.Card.insertAdjacentHTML(
-      "afterbegin",
-      `<div class="card">
+  DOMselectors.Card.insertAdjacentHTML(
+    "afterbegin",
+    `<div class="card">
       <h2 class="title">${Name.value}</h2>
       <h3 class="para">${Descript.value}</h3>
       <img class="img" src="${Image.value}"/>
       </div>`
-    )
-  }
-
-  return createcard();
- 
-  
-})
-  
-    
+  );
+});
