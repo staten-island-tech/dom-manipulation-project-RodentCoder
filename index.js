@@ -5,13 +5,13 @@ const DOMselectors = {
   Descript: document.getElementById("descript"),
   Image: document.getElementById("image"),
   Card: document.getElementById("display"),
-  Remove: document.getElementById("remove")
+  Remove: document.getElementById("remove"),
 };
 
-
-  function creation(card) {
-    DOMselectors.Card.insertAdjacentHTML(
-      "afterbegin",`
+function creation(card) {
+  DOMselectors.Card.insertAdjacentHTML(
+    "afterbegin",
+    `
       <div class="display ${card.id}">
       <h2 class="Name">${card.name}</h2>
       <h3 class="Text">${card.text}</h3>
@@ -21,35 +21,33 @@ const DOMselectors = {
       <button class ="remove btn">Remove</button> 
       </div>
       `
-    );
-    document.querySelector(".remove.btn").addEventListener("click", (event2) => {
-      removecard(card)
-    })
-  }
+  );
+  document.querySelector(".remove.btn").addEventListener("click", (event2) => {
+    removecard(card);
+  });
+}
 
-  function removetext() {
-    DOMselectors.Name.value = ""
-    DOMselectors.Descript.value= ""
-    DOMselectors.Image.value=" "
-  }
+function removetext() {
+  DOMselectors.Name.value = "";
+  DOMselectors.Descript.value = "";
+  DOMselectors.Image.value = " ";
+}
 
-  function readData() {
-    const card = {
-      name: DOMselectors.Name.value,
-      text: DOMselectors.Descript.value,
-      img: DOMselectors.Image.value,
-      
-    }
-    creation(card)
-    removetext()
-  }
-  
-  function removecard(card) {
-    document.querySelector(`.${card.id}`).remove()
-  }
+function readData() {
+  const card = {
+    name: DOMselectors.Name.value,
+    text: DOMselectors.Descript.value,
+    img: DOMselectors.Image.value,
+  };
+  creation(card);
+  removetext();
+}
 
-  DOMselectors.Button.addEventListener("click", (event) => {
-    event.preventDefault()
-    readData()
-  })
-    
+function removecard(card) {
+  document.querySelector(`.${card.id}`).remove();
+}
+
+DOMselectors.Button.addEventListener("click", (event) => {
+  event.preventDefault();
+  readData();
+});
