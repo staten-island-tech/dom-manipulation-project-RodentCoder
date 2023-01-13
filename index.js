@@ -22,7 +22,7 @@ function creation(card) {
       </div>
       `
   );
-  document.querySelector(".remove.btn").addEventListener("click", (event2) => {
+  document.querySelector(".remove.btn").addEventListener("click", () => {
     removecard(card);
   });
 }
